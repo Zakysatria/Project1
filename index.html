@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan LSP</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<h1 align="center"><font color="white" face="Tahoma">INPUT STOK PERIFERAL<br>TOKO KOMPUTER GENZ</font><br><img src="gambar/LOGO3.jpg"></h1>
+
+	<table>
+		<tr>
+			<td>
+				<form autocomplete="off" onsubmit="onFormSubmit()">
+					<div align="center">
+						<label for="kode"><b>Kode Barang</b></label><br>
+						<input type="text" name="kode" id="kode" required>
+					</div>
+					<div align="center">
+						<label for="nama"><b>Nama Barang</b></label><br>
+						<input type="text" name="nama" id="nama" required>
+					</div>
+					<div align="center">
+						<label for="jml"><b>Jumlah</b></label><br>
+						<input type="number" name="jml" id="jml" required>
+					</div>
+					<div align="center">
+						<label for="harga"><b>Harga</b></label><br>
+						<input type="number" name="harga" id="harga" required>
+					</div>
+
+					<div class="form_action--button" align="center">
+						<input type="submit" value="Simpan">
+						<input type="reset" value="Batal">
+					</div>
+				</form>
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<td valign="top">
+				<table class="list" id="storelist">
+					<thead>
+						<tr>
+							<th>KODE BARANG</th>
+							<th>NAMA BARANG</th>
+							<th>JUMLAH</th>
+							<th>HARGA</th>
+							<th>TOTAL</th>
+							<th>DISKON</th>
+							<th>BAYAR</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+				
+			</td>
+		</tr>
+	</table>
+	<script type="text/javascript" src="./script.js"></script>
+
+</body>
+</html>
